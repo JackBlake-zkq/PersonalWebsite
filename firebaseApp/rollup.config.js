@@ -72,5 +72,11 @@ export default {
 	],
 	watch: {
 		clearScreen: false
-	}
+	},
+	onwarn: function ( message ) {
+		if (message.code === 'CIRCULAR_DEPENDENCY') {
+		  return;
+		}
+		console.error(message);
+	  }
 };
