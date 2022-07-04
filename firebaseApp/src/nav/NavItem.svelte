@@ -3,10 +3,13 @@
 
     export let label = '';
     export let route = '';
+    export let i = 0;
+
+    console.log(label + ': ' + i);
 </script>
 
 
-<button class="{$location == route ? 'selected' : ''}"
+<button class="{$location == route ? `selected bg-pos-${i*100}` : ''}"
 on:click="{ () => { if($location != route) push(route) } }">
     {label}
 </button>
@@ -29,13 +32,28 @@ on:click="{ () => { if($location != route) push(route) } }">
 
     }
     .selected {
-        background-image: var(--blue-green-grad);
+        background-image: var(--rainbow-grad) !important;
+        background-size: 400%  !important;
         -webkit-text-fill-color: black; 
         -moz-text-fill-color: black;
         color: black;
     }
     .selected:hover {
-        background-image: var(--blue-green-grad);
         cursor: default;
+    }
+    .bg-pos-0 {
+        background-position: 0% 0% !important;
+    }
+    .bg-pos-100 {
+        background-position: -100% 0% !important;
+    }
+    .bg-pos-200 {
+        background-position: -200% 0% !important;
+    }
+    .bg-pos-300 {
+        background-position: -300% 0% !important;
+    }
+    .bg-pos-400 {
+        background-position: -400% 0% !important;
     }
 </style>

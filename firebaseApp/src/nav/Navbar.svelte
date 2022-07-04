@@ -13,10 +13,10 @@
 <nav on:mousemove={consumeEvent}>
     <div>
 
-        <NavItem label={'Home'} route={'/'}/>
-        <NavItem label={'About'} route={'/about'}/>
-        <NavItem label={'Portfolio'} route={'/portfolio'}/>
-        <NavItem label={'Contact'} route={'/contact'}/>
+        <NavItem label={'Home'} route={'/'} i={0}/>
+        <NavItem label={'About'} route={'/about'} i={1}/>
+        <NavItem label={'Portfolio'} route={'/portfolio'} i={2}/>
+        <NavItem label={'Contact'} route={'/contact'} i={3}/>
 
     </div>
 </nav>
