@@ -1,6 +1,6 @@
 <script>
         import * as d3 from 'd3';
-        import { onMount } from 'svelte';
+        import { onMount, onDestroy } from 'svelte';
 
         const points = [];
         for(let i = 0; i <= 500; i+=5){ points.push({x: i, y: 0}) }
@@ -13,7 +13,7 @@
                 .attr('cy', point => point.y)
                 .attr('r', 2)
                 .attr('fill', point => {
-                    let color = `hsl(${point.x + Math.trunc(point.y)}, 100%, ${Math.abs((point.x / 5) - 50) + 50}%)`;
+                    let color = `hsl(${Math.trunc(point.x) + Math.trunc(point.y)}, 100%, ${Math.abs((point.x / 5) - 50) + 50}%)`;
                     return color;
                 });
         }
@@ -42,7 +42,7 @@
             svg.selectAll('circle')
                 .data(points)
                 .transition()
-                .duration(100).ease(d3.easeLinear).call(draw);
+                .duration(300).ease(d3.easeLinear).call(draw);
         }
 
         function pushCircles(fromX, fromY) {
@@ -52,34 +52,60 @@
             updateCircles();
         }
 
-        let mobilePushInterval = null;
+        let enableAutoTimeout = null;
+        let autoPushInterval = null;
         let pushFromX = 0;
+        let pushFromY = 200;
+
+        function clearEventItems() {
+            window.onmousemove = null;
+            clearTimeout(enableAutoTimeout);
+            clearInterval(autoPushInterval);
+        }
+
+        function setAutoPushInterval() {
+            autoPushInterval = setInterval(() => {
+                pushCircles(pushFromX, pushFromY)
+                pushFromX += 10;
+            }, 100);
+        }
+
+        function setEnableAutoTimeout(){
+            enableAutoTimeout = setTimeout(() => setAutoPushInterval(), 100);
+        }
 
         function init(){
             svg?.remove();
-            window.onmousemove = null;
-            clearInterval(mobilePushInterval);
+            clearEventItems();
+            pushFromX = 0;
+            pushFromY = 200;
             createSvg();
             createCircles();
             if(window.innerWidth < 640) {
-                pushFromX = 0;
-                mobilePushInterval = setInterval(() => {
-                    pushCircles(pushFromX, 250)
-                    pushFromX += 10;
-                }, 100);
+                setAutoPushInterval();
             } else {
                 window.onmousemove = event => {
+                    clearTimeout(enableAutoTimeout);
+                    setEnableAutoTimeout();
+                    clearInterval(autoPushInterval);
                     //map window mouse position to svg viewbox position
                     const x = d3.scaleLinear().domain([0, window.innerWidth]).range([0, 500]);
                     const y = d3.scaleLinear().domain([window.innerHeight, 0]).range([-250, 250]);
+
+                    pushFromX = x(event.clientX);
+                    pushFromY = y(event.clientY);
                     
-                    pushCircles(x(event.clientX), y(event.clientY));
+                    pushCircles(pushFromX, pushFromY);
                 }
+                //revert circles back to middle if user doesn't move mouse for a second
+                setEnableAutoTimeout();
             }
         }
 
         onMount(init);
         window.onresize = init;
+
+        onDestroy(clearEventItems);
 
         const welcomeMsg = "Hello, I'm Jack Blake"
         

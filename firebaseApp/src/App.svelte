@@ -1,7 +1,9 @@
 <script>
 	import Router from 'svelte-spa-router'
 	import routes from './routes';
-	import Navbar from './Navbar.svelte';
+	import Navbar from './nav/Navbar.svelte';
+
+	let navBarHeight = 0;
 
 </script>
 

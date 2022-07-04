@@ -1,7 +1,11 @@
 import InteractiveWelcome from './routes/InteractiveWelcome.svelte'
-import AboutMe from './routes/AboutMe.svelte'
+import About from './routes/About.svelte'
+import Portfolio from './routes/Portfolio.svelte'
+import Contact from './routes/Contact.svelte'
 
 export default {
     '/': InteractiveWelcome,
-    '/aboutMe': AboutMe
+    '/about': About,
+    '/portfolio': Portfolio,
+    '/contact': Contact
 }
