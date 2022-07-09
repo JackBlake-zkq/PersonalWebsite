@@ -15,8 +15,8 @@
 
         <NavItem label={'Home'} route={'/'} i={0}/>
         <NavItem label={'About'} route={'/about'} i={1}/>
-        <NavItem label={'Portfolio'} route={'/portfolio'} i={2}/>
-        <NavItem label={'Contact'} route={'/contact'} i={3}/>
+        <NavItem label={'Contact'} route={'/contact'} i={2}/>
+        <!-- <NavItem label={'Portfolio'} route={'/portfolio'} i={3}/> -->
 
     </div>
 </nav>
