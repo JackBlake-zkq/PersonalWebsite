@@ -26,7 +26,7 @@
         position: fixed;
         background: var(--dark);
         width: 100%;
-        z-index: 1;
+        z-index: 100;
     }
     div {
         float: right;

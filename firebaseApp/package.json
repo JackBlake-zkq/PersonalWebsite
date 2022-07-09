@@ -19,8 +19,11 @@
   },
   "dependencies": {
     "@firebase/analytics": "^0.7.11",
+    "@firebase/functions": "^0.8.4",
     "@firebase/remote-config": "^0.3.10",
+    "@rollup/plugin-replace": "^4.0.0",
     "d3": "^7.5.0",
+    "fitty": "^2.3.6",
     "sirv-cli": "^2.0.0",
     "svelte-spa-router": "^3.2.0"
   }

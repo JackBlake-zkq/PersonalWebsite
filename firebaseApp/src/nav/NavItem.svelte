@@ -4,8 +4,7 @@
     export let label = '';
     export let route = '';
     export let i = 0;
-
-    console.log(label + ': ' + i);
+    
 </script>
 
 
@@ -26,23 +25,25 @@ on:click="{ () => { if($location != route) push(route) } }">
         font-family: inherit;
         padding: 0.5rem;
         margin: 0;
+        transition: background-color 0.3s;
     }
     button:hover {
-        background: rgba(255,255,255,0.3);
+        background-color: rgba(159, 204, 255, 0.3);
+        cursor: pointer;
 
     }
     .selected {
         background-image: var(--rainbow-grad) !important;
         background-size: 400%  !important;
-        -webkit-text-fill-color: black; 
-        -moz-text-fill-color: black;
-        color: black;
+        -webkit-text-fill-color: var(--dark); 
+        -moz-text-fill-color: var(--dark);
+        color: var(--dark);
     }
     .selected:hover {
         cursor: default;
     }
     .bg-pos-0 {
-        background-position: 0% 0% !important;
+	    background-position: 0% 0% !important;
     }
     .bg-pos-100 {
         background-position: -100% 0% !important;

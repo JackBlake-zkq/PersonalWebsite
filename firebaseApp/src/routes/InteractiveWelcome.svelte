@@ -113,6 +113,7 @@
 
 <main>
     <h1 class="absoluteCenter">
+        <b>👋</b>
         {#each welcomeMsg.split('') as char, i}
             <span>{char}</span>
         {/each}
@@ -136,6 +137,7 @@
         background-clip: text;
         -webkit-background-clip: text;
         -moz-background-clip: text;
+        cursor: default;
     }
     h1 span {
         transition: color 0.5s;
@@ -145,5 +147,20 @@
         color: transparent;
         -webkit-text-fill-color: transparent; 
         -moz-text-fill-color: transparent;
+    }
+    b {
+        display: inline-block;
+    }
+    b:hover {
+        animation: wave 0.2s alternate linear 4;
+    }
+    @media(max-width: 640px) {
+        b {
+            animation: wave 0.2s alternate linear 6;
+        }
+    }
+    @keyframes wave {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(45deg); }
     }
 </style>
