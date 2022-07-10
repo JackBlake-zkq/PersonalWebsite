@@ -34,7 +34,7 @@ on:click="{ () => { if($location != route) push(route) } }">
     }
     .selected {
         background-image: var(--rainbow-grad) !important;
-        background-size: 400%  !important;
+        background-size: 300%  !important;
         -webkit-text-fill-color: var(--dark); 
         -moz-text-fill-color: var(--dark);
         color: var(--dark);
