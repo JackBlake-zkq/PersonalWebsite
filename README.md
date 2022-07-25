@@ -17,7 +17,7 @@ AND in another terminal window:
 firebase emulators:start
 ```
 
-The emulators will start the hosting and functions emulators. While running in production,
+The emulators will start the hosting and functions emulators. While running in development,
 the app is configured to (using rollup's replace pugin) use the functions emulator, disable analytics collection, 
 and use a browser generated debug token for App Check. These debug tokens will not be functional unless they are registered
 on the firebase project by an administrator, so in most cases, App Check will deny calls on the email cloud function
