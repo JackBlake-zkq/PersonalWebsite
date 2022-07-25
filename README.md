@@ -5,10 +5,9 @@ a cloud function for sending emails, App Check to guard the cloud function, and 
 
 Pull request and merges into main will be deployed to firebase hosting, and live on jblake.dev within an hour after.
 
-To run the project locally, form "firebaseApp", run:
+To run the project locally, from "firebaseApp", run:
 
 ```bash
-cd firebaseApp
 npm run dev
 ```
 
@@ -33,7 +32,7 @@ exports.emailMe = functions.runWith({
 The email cloud function uses [Nodemailer](https://nodemailer.com/usage/) with an [ethereal email](https://ethereal.email/) 
 (visit this link and make an account) in development, which allows for previewing emails that 
 would be sent without actually sending them. For this to work, three environment variable must be set in a ".env" file
-inside the "functions" directory, to be loaded in by the dotenv package. They are:
+inside the "functions" directory, to be loaded in by the [dotenv](https://www.npmjs.com/package/dotenv) package. They are:
 
 ```
 SEND_TO_EMAIL=EmailThatEtherealEmailWillSimulateSendingTo
