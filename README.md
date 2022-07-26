@@ -18,10 +18,9 @@ firebase emulators:start
 ```
 
 The emulators will start the hosting and functions emulators. While running in development,
-the app is configured to (using rollup's replace pugin) use the functions emulator, disable analytics collection, 
+the app is configured to (using rollup's [replace pugin](https://www.npmjs.com/package/@rollup/plugin-replace)) use the functions emulator, disable analytics collection, 
 and use a browser generated debug token for App Check. These debug tokens will not be functional unless they are registered
-on the firebase project by an administrator, so in most cases, App Check will deny calls on the email cloud function
-for any contributors, unless you comment out the following line like so in "firebaseApp/functions/index.js":
+on the firebase project by an administrator. To run in development without requiring App Check, comment out this line in "firebaseApp/functions/index.js":
 
 ```javascript
 exports.emailMe = functions.runWith({
