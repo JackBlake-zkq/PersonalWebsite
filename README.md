@@ -1,4 +1,4 @@
-# PersonalWebpage
+# PersonalWebsite
 This a small Svelte project setup as a Firebase app. It's a single page app that uses vanilla CSS for styling, 
 and the [svelte-spa-router](https://github.com/ItalyPaleAle/svelte-spa-router) package for routing. Firebase is used for analytics, 
 a cloud function for sending emails, App Check to guard the cloud function, and Remote Config as a lightweight, makeshift CMS.
