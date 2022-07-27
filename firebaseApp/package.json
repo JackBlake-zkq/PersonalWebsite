@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "serve": "concurrently \"rollup -c -w\" \"firebase emulators:start --only functions\"",
+    "dev": "rollup -c && firebase emulators:start",
     "build": "rollup -c",
-    "dev": "rollup -c -w",
     "start": "sirv public --no-clear"
   },
   "devDependencies": {
@@ -23,7 +24,9 @@
     "@firebase/functions": "^0.8.4",
     "@firebase/remote-config": "^0.3.10",
     "@rollup/plugin-replace": "^4.0.0",
+    "concurrently": "^7.3.0",
     "d3": "^7.5.0",
+    "firebase-tools": "^11.4.0",
     "fitty": "^2.3.6",
     "sirv-cli": "^2.0.0",
     "svelte-spa-router": "^3.2.0"
