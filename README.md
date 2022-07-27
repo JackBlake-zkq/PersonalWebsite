@@ -21,7 +21,7 @@ npm run serve
 
 By default, serving will use port 8080, but if that port is taken, rollup will find a new one automatically.
 
-Rollup is configured to, using [replace pugin](https://www.npmjs.com/package/@rollup/plugin-replace), replace any references in javascript to "isProduction" with the value true or false at build time. If this value is false, the Firebase app use the functions emulator, disable analytics collection, and use a browser generated debug token for App Check. These debug tokens will not be functional unless they are registered on the firebase project. To run in development without requiring App Check, comment out this line in "firebaseApp/functions/index.js":
+Rollup is configured to, using [replace pugin](https://www.npmjs.com/package/@rollup/plugin-replace), replace any references in javascript to "isProduction" with the value true or false at build time. If this value is false, the Firebase app use the functions emulator, disable analytics collection, and use a browser generated [debug token](https://firebase.google.com/docs/app-check/web/debug-provider#:~:text=do%20the%20following%3A-,In%20the%20App%20Check%20section%20of%20the%20Firebase%20console%2C%20choose,that%20you%20keep%20it%20private.) for App Check. These debug tokens will not be functional unless they are registered on the firebase project. To run in development without requiring App Check, comment out this line in "firebaseApp/functions/index.js":
 
 ```javascript
 exports.emailMe = functions.runWith({
