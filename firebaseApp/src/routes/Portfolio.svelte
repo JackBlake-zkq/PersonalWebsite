@@ -1,1 +1,1 @@
-<h1 class="absoluteCenter" style="color: lightgray">Coming Soon...</h1>
+<h1 style="color: lightgray">Coming Soon...</h1>

@@ -2,7 +2,6 @@
 	---bg: #d6e6ff;
 	--dark: #09133a;
 	--light: #cbfafa;
-	--rainbow-grad: linear-gradient(to right, rgba(255,123,123,1) 0%, rgba(255,203,121,1) 14.5%, rgba(244,255,122,1) 29%, rgba(136,255,166,1) 44%, rgba(82,238,238,1) 57.5%, rgba(150,132,246,1) 72%, rgba(195,119,255,1) 86.5%, rgba(255,130,249,1) 100%);
 }
 
 html, body {
