@@ -9,7 +9,7 @@
 </script>
 
 <button class="{$location == route ? `selected` : ''}" style="color: hsl({i * 50}, 100%, 80%);"
-on:click="{ () => { if($location != route) push(route) } }">
+on:click="{ (e) => { if($location != route) { push(route) } if(e.target.classList.contains('selected')){ e.stopPropagation() } } }">
     {label}
 </button>
 
@@ -20,7 +20,7 @@ on:click="{ () => { if($location != route) push(route) } }">
         font-family: inherit;
         padding: 0.5rem;
         margin: 0;
-        transition: color 0.3s;
+        transition: opacity 0.4s;
         background-color: transparent;
         border: none;
     }

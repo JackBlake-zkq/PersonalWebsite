@@ -1,6 +1,7 @@
 <script>
     import { httpsCallable } from '@firebase/functions';
     import { functions } from '../firebase';
+    import PageTransition from '../PageTransition.svelte';
     import { sent } from '../stores';
     import Loader from '../utilities/Loader.svelte';
     const emailMe = httpsCallable(functions, 'emailMe');
@@ -31,36 +32,41 @@
     }
 </script>
 
-<main>
-    <div class="absoluteCenter">
-        <h1 class="text-center">Contact Me</h1>
-        <p>I'm interested in high impact web development projects, either virtually or in the Madison area. Looking forward to getting in touch!</p>
-        {#if !$sent}
-            <form on:submit|preventDefault={sendMail}>
-                <input type="text" placeholder="Name" 
-                    bind:value={info.name}>
-                <input type="text" placeholder="Email" 
-                    bind:value={info.email}>
-                <textarea placeholder="Message"
-                    bind:value={info.msg} rows=3></textarea>
-                <button type="submit" class={disabled ? 'disabled' : ''}>Send</button>
-                <p>Clicking "Send" will send me an email with your message and cc you 😁</p>
-            </form>
-            {#if err}
-                <h3>{err}</h3>
+<PageTransition>
+    <main>
+        <div>
+            <p>I'm interested in high impact web development projects, either virtually or in the Madison area. Looking forward to getting in touch!</p>
+            {#if !$sent}
+                <form on:submit|preventDefault={sendMail}>
+                    <input type="text" placeholder="Name" 
+                        bind:value={info.name}>
+                    <input type="text" placeholder="Email" 
+                        bind:value={info.email}>
+                    <textarea placeholder="Message"
+                        bind:value={info.msg} rows=3></textarea>
+                    <button type="submit" class={disabled ? 'disabled' : ''}>Send</button>
+                    <p>Clicking "Send" will send me an email with your message and cc you 😁</p>
+                </form>
+                {#if err}
+                    <h3>{err}</h3>
+                {/if}
+            {:else}
+                <p>🙌 Message sent! 🎉</p>
             {/if}
-        {:else}
-            <p>🙌 Message sent! 🎉</p>
+        </div>
+        {#if loading}
+            <Loader/>
         {/if}
-    </div>
-    {#if loading}
-        <Loader/>
-    {/if}
-</main>
+    </main>
+</PageTransition>
 
 <style>
     main {
         width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 6rem;
+        margin-top: 10vmin;
     }
     main div {
         width: 50%;
@@ -70,7 +76,7 @@
             width: 90%;
         }
     }
-    h1, p {
+    p {
         color: var(--dark);
         text-align: center;
         font-family: inherit;

@@ -24,7 +24,7 @@
 </button>
 
 {#if isOpen}
-<div transition:slide|local={{ duration: 300}} on:click|stopPropagation>
+<div transition:slide|local={{ duration: 300}}>
     <slot name="content">Content</slot>
 </div>
 {/if}
