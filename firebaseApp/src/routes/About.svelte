@@ -110,8 +110,8 @@
 
     const about = [
         "Hi! I'm <b>Jack Blake</b> 👋",
-        "I'm a sophomore at University of Wisconsin-Madison majoring in computer science 🙌 I'm interested in theoretical computer science and web development (escpecially backend). I'm planning on getting a masters in computer science  🎓 and pursuing a career in mission driven web development.",
-        "When I'm not coding, you can usually find me on the golf course, playing Magic: The Gathering, or enjoying a movie (My hot takes: Star Wars Episode IX 👍 Iron Man 3 👍 The Dark Knight Rises > The Dark Knight)."
+        "I'm a sophomore at University of Wisconsin-Madison majoring in computer science I'm interested in theoretical computer science and web development (escpecially backend). I'm planning on getting a masters in computer science and pursuing a career in mission driven web development.",
+        "When I'm not coding, you can usually find me playing table tennis, enjoying a game of Magic: The Gathering (EDH), or watching a movie."
     ]
         
 </script>
