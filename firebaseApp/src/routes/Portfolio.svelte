@@ -9,7 +9,7 @@
         <div>
             <ProjectCard imageURL="https://i.imgur.com/KyJMRPw.jpg" name="Data Science for Sustainable Development - Madison Hub Website" 
                 desc="Content focussed website that I acted as Project Manager for. Uses Contentful, a Headless CMS, and Astro for partial SSR."
-                links={[["Website", "https://madison.dssdglobal.org/"], ["GitHub", "https://github.com/DSSD-Madison/madison-website"]}/>
+                links={[["Website", "https://madison.dssdglobal.org/"], ["GitHub", "https://github.com/DSSD-Madison/madison-website"]]}/>
             <ProjectCard imageURL="https://i.imgur.com/FjbNBBi.gif" name="Eirene Peacebuilding Database" 
                 desc="Web app I helped build for Alliance for Peacebuilding during my internship with Data Science for Sustainbable Development (DSSD) Global. Allows public officials to search for measurements that can help them prove the effectiveness of their peacebuilding policies. Check out my Resume to learn more about my role!"
                 links={[["Website", "https://eirene.allianceforpeacebuilding.org/#/login"]]}/>
