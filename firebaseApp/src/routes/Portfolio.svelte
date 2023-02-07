@@ -7,7 +7,7 @@
 <PageTransition>
     <main>
         <div>
-            <ProjectCard imageURL="https://i.imgur.com/FjbNBBi.gif" name="Data Science for Sustainable Development - Madison Hub Website" 
+            <ProjectCard imageURL="https://i.imgur.com/KyJMRPw.jpg" name="Data Science for Sustainable Development - Madison Hub Website" 
                 desc="Content focussed website that I acted as Project Manager for. Uses Contentful, a Headless CMS, and Astro for partial SSR."
                 links={[["Website", "https://madison.dssdglobal.org/"], ["GitHub", "https://github.com/DSSD-Madison/madison-website"]}/>
             <ProjectCard imageURL="https://i.imgur.com/FjbNBBi.gif" name="Eirene Peacebuilding Database" 
