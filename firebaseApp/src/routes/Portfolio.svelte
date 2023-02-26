@@ -25,6 +25,12 @@
             <ProjectCard imageURL="https://i.imgur.com/hEjoOMl.gif" name="Old Personal Website" 
                 desc="The first iteration of my personal website. Made with vanilla Javascript, HTML & CSS"
                 links={[["Website", "https://jackblake-zkq.github.io/personal-website-0/"], ["GitHub", "https://github.com/JackBlake-zkq/personal-website-0"]]}/>
+            <ProjectCard imageURL="https://i.imgur.com/G7aTQGT.gif" name="Janky Draw App" 
+                desc="Draw app made using CSS box shadows. Fun Experiment"
+                links={[["Website", "https://jackblake-zkq.github.io/janky-draw-app/"], ["GitHub", "https://github.com/JackBlake-zkq/janky-draw-app"]]}/>
+            <ProjectCard imageURL="https://i.imgur.com/0RniMzE.png" name="Minecraft Strength Alerts Mod" 
+                desc="Minecraft Forge mod made for Hypixel Skyblock (a popular multiplayer gamemode). Alerts the player with by rendering text with the names of players when they get strength. Position, color, etc. is configurable with commands."
+                links={[["GitHub", "https://github.com/JackBlake-zkq/skywars-strength-alerts"]]}/>
         </div>
     </main>
 </PageTransition>
