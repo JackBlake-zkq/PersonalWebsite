@@ -8,7 +8,7 @@
     <main>
         <div>
             <ProjectCard imageURL="https://i.imgur.com/li57Qlj.jpg" name="Custom Merch Checkout (WIP)" 
-                desc="Allows you to sell customized products, printed to demand, with zero overhead costs by integrating Strip with a print to demand API"
+                desc="Allows you to sell customized products, printed to demand, with zero overhead costs by integrating Stripe with a print to demand API"
                 links={[["GitHub", "https://github.com/JackBlake-zkq/custom-merch-checkout"]]}/>
             <ProjectCard imageURL="https://i.imgur.com/KyJMRPw.jpg" name="Data Science for Sustainable Development - Madison Hub Website" 
                 desc="Content focussed website that I acted as Project Manager for. Uses Contentful, a Headless CMS, and Astro for partial SSR."
