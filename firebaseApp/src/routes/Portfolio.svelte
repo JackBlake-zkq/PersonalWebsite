@@ -13,6 +13,9 @@
             <ProjectCard imageURL="https://images.ctfassets.net/x00i2tlytr27/6RmXcRxOTji0flKJf4JaSr/92d81414981ae9d742ad39e116cfcb95/Screen_Shot_2023-05-21_at_3.05.10_PM.png" name="UW Madison - Solar Array Analytics" 
                 desc="DSSD collaborated with Helios to create an analytics page for the solar arrays on UW-Madison's campus"
                 links={[["Website", "https://madison-solar.dssdglobal.org/"],["GitHub", "https://github.com/DSSD-Madison/Helios"]]}/>
+            <ProjectCard imageURL="https://i.imgur.com/fYnmy3o.png" name="ROBUG" 
+                desc="Real time multi-player browser game made for Madhacks 2023"
+                links={[["Website", "https://madhacks-io-game-hhwbvukxcq-uc.a.run.app/"],["GitHub", "https://github.com/JackBlake-zkq/madhacks-io-game"]]}/>
             <ProjectCard imageURL="https://i.imgur.com/KyJMRPw.jpg" name="Data Science for Sustainable Development - Madison Hub Website" 
                 desc="Content focussed website that I acted as Project Manager for. Uses Contentful, a Headless CMS, and Astro for partial SSR."
                 links={[["Website", "https://madison.dssdglobal.org/"], ["GitHub", "https://github.com/DSSD-Madison/madison-website"]]}/>
