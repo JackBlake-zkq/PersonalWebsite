@@ -7,9 +7,12 @@
 <PageTransition>
     <main>
         <div>
-            <ProjectCard imageURL="https://i.imgur.com/li57Qlj.jpg" name="Custom Merch Checkout (WIP)" 
-                desc="Allows you to sell customized products, printed to demand, with zero overhead costs by integrating Stripe with a print to demand API"
-                links={[["GitHub", "https://github.com/JackBlake-zkq/custom-merch-checkout"]]}/>
+            <ProjectCard imageURL="https://i.imgur.com/HYsendz.png" name="UW Madison - Course Seach & Enroll +" 
+                desc="Chrome extension for UW Madison students that pulls Rate My Professors and Madgrades info into Course Search & Enroll"
+                links={[["Website", "https://chrome.google.com/webstore/detail/uw-madison-course-search/ldnllmdimjknflobmdjnmefeollalodf"],["GitHub", "https://github.com/JackBlake-zkq/cse-plus"]]}/>
+            <ProjectCard imageURL="https://images.ctfassets.net/x00i2tlytr27/6RmXcRxOTji0flKJf4JaSr/92d81414981ae9d742ad39e116cfcb95/Screen_Shot_2023-05-21_at_3.05.10_PM.png" name="UW Madison - Solar Array Analytics" 
+                desc="DSSD collaborated with Helios to create an analytics page for the solar arrays on UW-Madison's campus"
+                links={[["Website", "https://madison-solar.dssdglobal.org/"],["GitHub", "https://github.com/DSSD-Madison/Helios"]]}/>
             <ProjectCard imageURL="https://i.imgur.com/KyJMRPw.jpg" name="Data Science for Sustainable Development - Madison Hub Website" 
                 desc="Content focussed website that I acted as Project Manager for. Uses Contentful, a Headless CMS, and Astro for partial SSR."
                 links={[["Website", "https://madison.dssdglobal.org/"], ["GitHub", "https://github.com/DSSD-Madison/madison-website"]]}/>
