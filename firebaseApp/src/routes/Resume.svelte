@@ -6,7 +6,7 @@
 
 <PageTransition>
     <main>
-        <iframe title="Resume" src="https://docs.google.com/document/d/e/2PACX-1vQul7qITW5n34T-2O4Uxjhsvif7rmgWMOACFGCiTHiqKpNkBI_DAagOEKkd0Wof3lJFOq6KnUrA4C_U/pub?embedded=true"></iframe>
+        <iframe src="https://drive.google.com/file/d/11ywQGcTBKwf3aG_s_qOQmw7jOK_ym6Bi/preview" width="640" height="480" allow="autoplay"/>
     </main>
 </PageTransition>
 
