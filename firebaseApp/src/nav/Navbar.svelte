@@ -20,16 +20,14 @@
     {#if w > 640}
         <NavItem label="About" route="/" i=0/>
         <NavItem label="Portfolio" route="/portfolio" i=1/>
-        <NavItem label="Resume" route="/resume" i=2/>
-        <NavItem label="Contact" route="/contact" i=3/>
+        <NavItem label="Contact" route="/contact" i=2/>
     {:else}
         <Dropdown>
             <h3 slot="title">☰</h3>
             <div slot="content">
                 <NavItem label="About" route="/" i=0/>
                 <NavItem label="Portfolio" route="/portfolio" i=1/>
-                <NavItem label="Resume" route="/resume" i=2/>
-                <NavItem label="Contact" route="/contact" i=3/>
+                <NavItem label="Contact" route="/contact" i=2/>
             </div>
         </Dropdown>
     {/if}
