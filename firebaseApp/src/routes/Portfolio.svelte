@@ -13,7 +13,7 @@
             <ProjectCard imageURL="https://images.ctfassets.net/x00i2tlytr27/6RmXcRxOTji0flKJf4JaSr/92d81414981ae9d742ad39e116cfcb95/Screen_Shot_2023-05-21_at_3.05.10_PM.png" name="UW Madison - Solar Array Analytics" 
                 desc="Analytics page for the solar arrays on UW-Madison's campus, and the estimated benefit of proposed new arrays"
                 links={[["Website", "https://madison-solar.dssdglobal.org/"],["GitHub", "https://github.com/DSSD-Madison/Helios"]]}/>
-            <ProjectCard imageURL="https://i.imgur.com/KyJMRPw.jpg" name="Data Science for Sustainable Development - Madison Hub Website" 
+            <ProjectCard imageURL="https://i.imgur.com/KyJMRPw.jpg" name="Website Framework for Student Organizations" 
                 desc="Open-source framework for creating websites for student organizations. Made with Contentful, a Headless CMS, and Astro for partial SSR"
                 links={[["Website", "https://madison.dssdglobal.org/"], ["GitHub", "https://github.com/DSSD-Madison/madison-website"]]}/>
             <ProjectCard imageURL="https://i.imgur.com/fYnmy3o.png" name="ROBUG" 
