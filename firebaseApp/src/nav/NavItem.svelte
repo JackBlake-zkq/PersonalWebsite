@@ -3,13 +3,20 @@
 
     export let label = '';
     export let route = '';
+    export let href = '';
     export let i = 0;
+
+    const handleClick = e => {
+        if(href) window.location.assign(href)
+        if($location != route) push(route) 
+        if(e.target.classList.contains('selected')) e.stopPropagation()
+    }
 
     
 </script>
 
 <button class="{$location == route ? `selected` : ''}" style="color: hsl({i * 50}, 100%, 80%);"
-on:click="{ (e) => { if($location != route) { push(route) } if(e.target.classList.contains('selected')){ e.stopPropagation() } } }">
+on:click="{ handleClick }">
     {label}
 </button>
 

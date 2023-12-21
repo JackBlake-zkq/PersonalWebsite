@@ -19,7 +19,7 @@
 <nav on:mousemove={consumeEvent}>
     {#if w > 640}
         <NavItem label="About" route="/" i=0/>
-        <NavItem label="Portfolio" route="/portfolio" i=1/>
+        <NavItem label="Portfolio" href="https://github.com/JackBlake-zkq" i=1/>
         <NavItem label="Contact" route="/contact" i=2/>
     {:else}
         <Dropdown>
