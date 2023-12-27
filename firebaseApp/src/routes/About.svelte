@@ -117,7 +117,7 @@
 
 <PageTransition>
     <main>
-        <div style="width: 80%; margin-top: 5rem; margin-left: 10%;">
+        <div id="txt">
             {#each about as sect}
                 <p>{@html sect}</p>
             {/each}
@@ -130,7 +130,13 @@
     main {
         padding-bottom: 2rem;
     }
-    #svgContainer{
+    #txt {
+        width: 80%; 
+        margin-top: 5rem; 
+        margin-left: 10%; 
+        text-align: center;
+    }
+    #svgContainer {
         width: 100vw;
         height: 100vh;
         z-index: -2;
