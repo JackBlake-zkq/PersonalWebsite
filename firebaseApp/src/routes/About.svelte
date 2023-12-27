@@ -112,7 +112,7 @@
         "Hi! I'm <b>Jack Blake</b> 👋",
         "I'm a mission driven developer interested in climate change, health, and government",
         "I enjoy climbing, golfing, disc golfing, table tennis, hiking, movies, and board games"
-        
+    ]
 </script>
 
 <PageTransition>
